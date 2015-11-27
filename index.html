@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="codemirror-5.9/lib/codemirror.js"></script>
+        <script src="codemirror-5.9/mode/javascript/javascript.js"></script>
+        <script src="codemirror-5.9/mode/xml/xml.js"></script>
+
+        <script type="text/javascript" src="vkbeautify.js"></script>
+        <script type="text/javascript" src="jq-sed.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="codemirror-5.9/lib/codemirror.css" />
+        <link rel="stylesheet" type="text/css" href="minimalcss-master/minimal.css" />
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <a class="logo" href="http://jq-sed.arvidj.eu">jq-sed</a>
+            </header>
+            <div class="row">
+            <form>
+
+            <div class="col-6">
+            <h2>XML / HTML</h2>
+            <textarea  name="xml">
+&lt;?xml version=&quot;1.0&quot; ?&gt;
+                &lt;Test cycle=&quot;-1&quot;&gt;
+    &lt;Input name=&quot;All_doors_closed_planned_hour&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Closing_anticipation_duration&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Closing_timeout_reopening_duration&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Current_vital_date&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Delay_between_PSD_and_RSD_closing_commands&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Delay_between_PSD_and_RSD_opening_commands&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;List_of_RSD&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Sorted_list_of_indexes&quot; value=&quot;[1,2]&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Minimum_opening_duration&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Obstacle_detection_reopening_duration&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;5&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Authorization&quot; node=&quot;6&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;5&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closed_and_locked&quot; node=&quot;6&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Closing_timeout&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;5&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;PSD_Obstacle_detected&quot; node=&quot;6&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Passenger_Exchange_is_possible&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Authorization&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Authorization&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Authorization&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Authorization&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Closed_and_locked&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Closed_and_locked&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Closed_and_locked&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Closed_and_locked&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Closing_timeout&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_duration&quot; value=&quot;0&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Obstacle_detected&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Obstacle_detected&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Obstacle_detected&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;RSD_Obstacle_detected&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Boolean&quot; value=&quot;false&quot;/&gt;
+    &lt;/Input&gt;
+    &lt;Input name=&quot;Sorted_List_of_PSD&quot; node=&quot;1&quot;&gt;
+&#x9;  &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Couple_of_indexes_set&quot;&gt;
+        &lt;Couple_Of_Rank rank_1=&quot;1&quot; rank_2=&quot;1&quot;/&gt;
+        &lt;Couple_Of_Rank rank_1=&quot;2&quot; rank_2=&quot;2&quot;/&gt;
+&#x9;  &lt;/Atomic&gt;
+&#x9;&lt;/Input&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;5&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Closing_Date&quot; node=&quot;6&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;5&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;PSD_Opening_Date&quot; node=&quot;6&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Closing_Date&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Closing_Date&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Closing_Date&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Closing_Date&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Opening_Date&quot; node=&quot;1&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Opening_Date&quot; node=&quot;2&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Opening_Date&quot; node=&quot;3&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+    &lt;Output name=&quot;RSD_Opening_Date&quot; node=&quot;4&quot;&gt;
+      &lt;Atomic is_undefined=&quot;false&quot; type=&quot;Non-vital_local_date&quot; valid=&quot;true&quot; value=&quot;0.0&quot;/&gt;
+    &lt;/Output&gt;
+  &lt;/Test&gt;                
+            </textarea>
+            </div>
+            <div class="col-6">
+                <h2>Javascript</h2>
+                <textarea  name="js">
+$xml
+    .find('Input[name!=Minimum_opening_duration]')
+    .remove();</textarea>
+            </div>
+            </div>
+
+            <div class="row" id="error-row">
+                <div class="col-12">
+                    <h2>Errors</h2>
+                    <ul class="errors">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h2>Result</h2>
+                    <textarea name="result"></textarea>
+                </div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
